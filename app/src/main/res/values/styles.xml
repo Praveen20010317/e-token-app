@@ -1,0 +1,5 @@
+<resources>
+    <style name="customFab">
+        <item name="android:background">@drawable/fab_lable_background</item>
+    </style>
+</resources>

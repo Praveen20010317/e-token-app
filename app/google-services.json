@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "875085439119",
+    "project_id": "cafe-tea",
+    "storage_bucket": "cafe-tea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875085439119:android:2bfa022babe015d88010fa",
+        "android_client_info": {
+          "package_name": "com.example.cafetea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875085439119-3tqlv903hj9gtgcrfta8mhs12n2tg1kf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdefaVy2xp2etYqQE6U2TeWfwTPag2mOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875085439119-3tqlv903hj9gtgcrfta8mhs12n2tg1kf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

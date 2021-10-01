@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cafetea">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kpricon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/kpricon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CafeTea">
+        <activity
+            android:name=".ForgetPassword"
+            android:exported="true" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="true" />
+        <activity android:name=".Staff_Main_Page" />
+        <activity android:name=".Staff_login" />
+        <activity android:name=".Staff_Order_Details" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

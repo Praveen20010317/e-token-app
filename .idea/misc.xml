@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable-v23/background.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable-v24/check.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable-v24/fab_lable_background.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable-v24/ic_add_pink.xml" value="0.15" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable-v24/rounded_corner.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable/background.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable/list1.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable/square.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable/wallet.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_admin_cafe_tea.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_admin_main.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_admin_old_order.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_admin_staff.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_blog_view.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_change_password.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_forget_password.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_otp_verfication.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_register_account.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_splash_screen.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_staff_login.xml" value="0.2453125" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_staff_main_page.xml" value="0.25" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_staff_old_order.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_staff_order.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_staff_order_details.xml" value="0.264" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_staff_scanner.xml" value="0.2453125" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/blog_view.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/menu/menu.xml" value="0.259375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
