@@ -134,7 +134,7 @@ public class Staff_Order_Details extends AppCompatActivity {
         adminDB.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String status = "Ordered";
+                String status = "Pending";
                 String des = "---";
                 if(descrption.getText().toString().equals("")) {
                     descrption.setText(des);

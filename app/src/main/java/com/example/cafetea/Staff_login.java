@@ -113,7 +113,6 @@ public class Staff_login extends AppCompatActivity {
                             startActivity(intent);
                         } else {
                             Toast.makeText(getApplicationContext(), "Authentication failed.", Toast.LENGTH_SHORT).show();
-                            progressDialog.dismiss();
                         }
                     }
                 });
