@@ -8,6 +8,7 @@ public class Wallet {
     public String dept;
     public String uid;
     public String password;
+    public String category;
     public String key;
 
     public Wallet(String wallet, String email, String full_name, String user_id, String dept, String uid, String key) {
@@ -18,6 +19,14 @@ public class Wallet {
         this.dept = dept;
         this.uid = uid;
         this.key = key;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public String getUid() {

@@ -4,13 +4,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -38,6 +42,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Staff_Main_Page extends AppCompatActivity {
+    private static final int MY_CAMERA_REQUEST_CODE = 100;
     private RecyclerView recyclerView;
     private StaffAdapter adapter;
     FloatingActionButton Old_order, order_now, signout;
@@ -155,18 +160,23 @@ public class Staff_Main_Page extends AppCompatActivity {
         order_now.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (count1 == 1) {
-                    IntentIntegrator integrator = new IntentIntegrator(Staff_Main_Page.this);
-                    integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
-                    integrator.setPrompt("Scan");
-                    integrator.setCameraId(0);
-                    integrator.setBeepEnabled(true);
-                    integrator.initiateScan();
-                    //Intent intent = new Intent(getApplicationContext(), Staff_Order_Details.class);
-                    //startActivity(intent);
+                if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                    requestPermissions(new String[]{Manifest.permission.CAMERA}, MY_CAMERA_REQUEST_CODE);
                 }else {
-                    Toast.makeText(getApplicationContext(),"Your order already in queue!", Toast.LENGTH_LONG).show();
+                    if (count1 == 1) {
+                        IntentIntegrator integrator = new IntentIntegrator(Staff_Main_Page.this);
+                        integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
+                        integrator.setPrompt("Scan");
+                        integrator.setCameraId(0);
+                        integrator.setBeepEnabled(true);
+                        integrator.initiateScan();
+                        //Intent intent = new Intent(getApplicationContext(), Staff_Order_Details.class);
+                        //startActivity(intent);
+                    }else {
+                        Toast.makeText(getApplicationContext(),"Your order already in queue!", Toast.LENGTH_LONG).show();
+                    }
                 }
+
             }
         });
         signout.setOnClickListener(new View.OnClickListener() {
@@ -230,5 +240,16 @@ public class Staff_Main_Page extends AppCompatActivity {
                 });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == MY_CAMERA_REQUEST_CODE) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this, "Camera permission granted", Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(this, "Enable the camera permission to scan qr code", Toast.LENGTH_LONG).show();
+            }
+        }
     }
 }

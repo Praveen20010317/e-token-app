@@ -36,7 +36,7 @@ public class Staff_Order_Details extends AppCompatActivity {
     String email;
     int amt_wallet, updateWallet;
     ProgressDialog progressDialog;
-    String price;
+    String price, category;
     String qnt[] = {"0","1"};
     DatabaseReference mdatabase, adminDB, orderDB;
     @Override
@@ -62,7 +62,7 @@ public class Staff_Order_Details extends AppCompatActivity {
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         email = currentUser.getEmail();
 
-        SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
         Date date = new Date();
         SimpleDateFormat formatter1 = new SimpleDateFormat("HHmmss");
         Date date1 = new Date();
@@ -93,6 +93,7 @@ public class Staff_Order_Details extends AppCompatActivity {
                         id.setText(wallet.getUser_id());
                         amt_wallet = Integer.parseInt(wallet.getWallet());
                         dept = wallet.getDept();
+                        category = wallet.getCategory();
                     }
                 }
             }
@@ -144,11 +145,10 @@ public class Staff_Order_Details extends AppCompatActivity {
                 Orders orders = new Orders(order_no,id.getText().toString(), name.getText().toString(), coffee.getSelectedItem().toString(),
                         tea.getSelectedItem().toString(),
                         snack.getSelectedItem().toString(),status,
-                        descrption.getText().toString(), time.getText().toString(), price, dept, location, uid);
+                        descrption.getText().toString(), time.getText().toString(), price, dept, location, uid, category);
 
                 //adminDB.push().getKey()
                 adminDB.child(location).setValue(orders);
-
                 FirebaseDatabase.getInstance().getReference(Database.WALLET_DATABASE).child(id.getText().toString()).child("wallet").setValue(Integer.toString(updateWallet))
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override

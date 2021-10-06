@@ -16,13 +16,14 @@ public class Orders implements Serializable {
     public String dept;
     public String uid;
     public String locationK;
+    public String category;
     public String key;
 
     public Orders(String order_no,String id,
                   String name, String coffee,
                   String tea, String snacks,
                   String status, String description,
-                  String time, String amount, String dept, String location, String uid) {
+                  String time, String amount, String dept, String location, String uid, String category) {
         this.order_no = order_no;
         this.id = id;
         this.name = name;
@@ -36,6 +37,7 @@ public class Orders implements Serializable {
         this.dept = dept;
         this.locationK = location;
         this.uid = uid;
+        this.category = category;
     }
     public Orders() {
     }
