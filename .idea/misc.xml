@@ -10,6 +10,7 @@
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable-v24/rounded_corner.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable/background.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable/list1.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable/scanner.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable/square.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/drawable/wallet.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_admin_cafe_tea.xml" value="0.259375" />
@@ -18,6 +19,9 @@
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_admin_staff.xml" value="0.259375" />
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_blog_view.xml" value="0.259375" />
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_change_password.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_fc_login.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_fc_main_page.xml" value="0.259375" />
+        <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_fc_order_list.xml" value="0.259375" />
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_forget_password.xml" value="0.259375" />
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_otp_verfication.xml" value="0.259375" />
         <entry key="..\:/Users/Madhan/AndroidStudioProjects/CafeTea/app/src/main/res/layout/activity_register_account.xml" value="0.259375" />

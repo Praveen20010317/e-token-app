@@ -42,6 +42,30 @@ public class Orders implements Serializable {
     public Orders() {
     }
 
+    public String getDept() {
+        return dept;
+    }
+
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
+
+    public String getLocationK() {
+        return locationK;
+    }
+
+    public void setLocationK(String locationK) {
+        this.locationK = locationK;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
     public String getUid() {
         return uid;
     }

@@ -38,7 +38,7 @@ public class Staff_login extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private DatabaseReference databse;
     ProgressDialog progressDialog;
-    TextView changePass;
+    TextView changePass, fcLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,12 +49,20 @@ public class Staff_login extends AppCompatActivity {
         login = findViewById(R.id.log_btn);
         emailId = findViewById(R.id.log_mail);
         pass = findViewById(R.id.log_password);
+        fcLogin = findViewById(R.id.fc_login_page);
         changePass = findViewById(R.id.chage_password);
         mAuth = FirebaseAuth.getInstance();
         changePass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ForgetPassword.class);
+                startActivity(intent);
+            }
+        });
+        fcLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), fc_login.class);
                 startActivity(intent);
             }
         });
@@ -123,8 +131,13 @@ public class Staff_login extends AppCompatActivity {
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
-            Intent intent = new Intent(getApplicationContext(), Staff_Main_Page.class);
-            startActivity(intent);
+            if (currentUser.getEmail().equals("fc@gmail.com")) {
+                Intent intent = new Intent(getApplicationContext(), fc_main_page.class);
+                startActivity(intent);
+            }else {
+                Intent intent = new Intent(getApplicationContext(), Staff_Main_Page.class);
+                startActivity(intent);
+            }
         }
     }
 

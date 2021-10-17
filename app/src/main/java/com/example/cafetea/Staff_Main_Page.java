@@ -160,21 +160,17 @@ public class Staff_Main_Page extends AppCompatActivity {
         order_now.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-                    requestPermissions(new String[]{Manifest.permission.CAMERA}, MY_CAMERA_REQUEST_CODE);
+                if (count1 == 1) {
+                    IntentIntegrator integrator = new IntentIntegrator(Staff_Main_Page.this);
+                    integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
+                    integrator.setPrompt("Scan");
+                    integrator.setCameraId(0);
+                    integrator.setBeepEnabled(true);
+                    integrator.initiateScan();
+                    //Intent intent = new Intent(getApplicationContext(), Staff_Order_Details.class);
+                    //startActivity(intent);
                 }else {
-                    if (count1 == 1) {
-                        IntentIntegrator integrator = new IntentIntegrator(Staff_Main_Page.this);
-                        integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
-                        integrator.setPrompt("Scan");
-                        integrator.setCameraId(0);
-                        integrator.setBeepEnabled(true);
-                        integrator.initiateScan();
-                        //Intent intent = new Intent(getApplicationContext(), Staff_Order_Details.class);
-                        //startActivity(intent);
-                    }else {
-                        Toast.makeText(getApplicationContext(),"Your order already in queue!", Toast.LENGTH_LONG).show();
-                    }
+                    Toast.makeText(getApplicationContext(),"Your order already in queue!", Toast.LENGTH_LONG).show();
                 }
 
             }
@@ -240,16 +236,5 @@ public class Staff_Main_Page extends AppCompatActivity {
                 });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
-    }
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == MY_CAMERA_REQUEST_CODE) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "Camera permission granted", Toast.LENGTH_LONG).show();
-            } else {
-                Toast.makeText(this, "Enable the camera permission to scan qr code", Toast.LENGTH_LONG).show();
-            }
-        }
     }
 }

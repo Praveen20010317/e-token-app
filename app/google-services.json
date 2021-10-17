@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "875085439119",
-    "project_id": "cafe-tea",
-    "storage_bucket": "cafe-tea.appspot.com"
+    "project_number": "184258532609",
+    "firebase_url": "https://kpr-e-token-default-rtdb.firebaseio.com",
+    "project_id": "kpr-e-token",
+    "storage_bucket": "kpr-e-token.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:875085439119:android:2bfa022babe015d88010fa",
+        "mobilesdk_app_id": "1:184258532609:android:9d76bb7d84bd1160233700",
         "android_client_info": {
           "package_name": "com.example.cafetea"
         }
       },
       "oauth_client": [
         {
-          "client_id": "875085439119-3tqlv903hj9gtgcrfta8mhs12n2tg1kf.apps.googleusercontent.com",
+          "client_id": "184258532609-bfikb5qcl4k40mg3ki90co4n5lccdg1u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cafetea",
+            "certificate_hash": "9014d5c9eab42fc7850432ebdc4a68b9194706de"
+          }
+        },
+        {
+          "client_id": "184258532609-o5s6kvfoknnh9bo4kba782jtu8s40p8g.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAdefaVy2xp2etYqQE6U2TeWfwTPag2mOA"
+          "current_key": "AIzaSyBRJ-gI6KEtMTZAqCmEPFy78lL7KwYS7zk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "875085439119-3tqlv903hj9gtgcrfta8mhs12n2tg1kf.apps.googleusercontent.com",
+              "client_id": "184258532609-o5s6kvfoknnh9bo4kba782jtu8s40p8g.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
