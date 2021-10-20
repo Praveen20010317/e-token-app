@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cafetea" >
+    package="com.example.cafetea">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,26 +11,27 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/kpricon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CafeTea" >
+        android:theme="@style/Theme.CafeTea">
         <activity
-            android:name=".fc_login"
-            android:exported="true" />
+            android:name=".Qrcode"/>
         <activity
-            android:name=".Fc_Order_List"
-            android:exported="true" />
+            android:name=".fc_login"/>
         <activity
-            android:name=".ForgetPassword"
-            android:exported="true" />
+            android:name=".Fc_Order_List"/>
         <activity
-            android:name=".fc_main_page"
-            android:exported="true" />
+            android:name=".ForgetPassword"/>
         <activity
-            android:name=".ChangePassword"
-            android:exported="true" />
-        <activity android:name=".Staff_Main_Page" />
-        <activity android:name=".Staff_login" />
-        <activity android:name=".Staff_Order_Details" />
-        <activity android:name=".SplashScreen" >
+            android:name=".fc_main_page"/>
+        <activity
+            android:name=".ChangePassword"/>
+        <activity
+            android:name=".Staff_Main_Page" />
+        <activity
+            android:name=".Staff_login" />
+        <activity
+            android:name=".Staff_Order_Details" />
+        <activity
+            android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

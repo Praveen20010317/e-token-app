@@ -45,7 +45,7 @@ public class Staff_Main_Page extends AppCompatActivity {
     private static final int MY_CAMERA_REQUEST_CODE = 100;
     private RecyclerView recyclerView;
     private StaffAdapter adapter;
-    FloatingActionButton Old_order, order_now, signout;
+    FloatingActionButton Old_order, order_now, signout, qrScanner;
     RelativeLayout relativeLayout;
     private DatabaseReference mDatabase, databse2;
     private ProgressDialog progressDialog;
@@ -62,13 +62,11 @@ public class Staff_Main_Page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_staff_main_page);
         Old_order = findViewById(R.id.old_order);
         od_tv = findViewById(R.id.od_details);
         order_now = findViewById(R.id.order_Now);
+        qrScanner = findViewById(R.id.qrcode);
         relativeLayout = findViewById(R.id.layout_empty);
         recyclerView = findViewById(R.id.recyclerView);
         amount = findViewById(R.id.wallet_amount);
@@ -119,6 +117,14 @@ public class Staff_Main_Page extends AppCompatActivity {
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
+        qrScanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Qrcode.class);
+                intent.putExtra("staffId", id);
+                startActivity(intent);
             }
         });
         //adding an event listener to fetch values
